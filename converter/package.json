@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "check": "node --check ./scripts/convert.js && node --check ./scripts/batch.js && node --check ./scripts/preview.js && node --check ./scripts/copy.js && node ./scripts/convert.js --help && node ./scripts/batch.js --help && node ./scripts/preview.js --help",
+        "format": "prettier --config .prettierrc --ignore-path .prettierignore --write **/*.{js,cjs,json}"
+    },
+    "dependencies": {
+        "culori": "^4.0.2",
+        "image-q": "^4.0.0",
+        "sharp": "^0.34.2"
+    },
+    "devDependencies": {
+        "prettier": "^3.3.3"
+    }
+}
